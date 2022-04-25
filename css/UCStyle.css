@@ -1,0 +1,86 @@
+#container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 5px;
+    background-color: slategray;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: [col-start] auto [col1] auto [col2] auto [col-end];
+    grid-template-rows: [row-start] auto [row1] auto [row2] auto [row3] auto [row-end];
+}
+
+#fancyTitle {
+    background-color: snow;
+    color: black;
+    font-style: italic;
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: row-start;
+    grid-row-end: row1;
+    text-align: center;
+}
+
+#intro {
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: row1;
+    grid-row-end: row2;
+    text-align: center;
+}
+
+#conversionAmounts {
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: row2;
+    grid-row-end: row3;
+}
+
+input[type="number"] {
+    height: 30px;
+    width: 250px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: snow;
+}
+
+#funGraphic {
+    float: right;
+    height: auto;
+    width: auto;
+    grid-column-start: col2;
+    grid-column-end: span col-end;
+    grid-row-start: row2;
+    grid-row-end: span row2;
+}
+
+#conversionOptions {
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: row3;
+    grid-row-end: span row-end;
+    padding: 5px;
+}
+
+#convertButton {
+    grid-column-start: col-start;
+    grid-column-end: span col-end;
+    grid-row-start: row-end;
+    grid-row-end: span row-end;
+}
+
+button {
+    background-color: snow;
+    color: slategray;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#footer {
+    background-color: snow;
+    color: black;
+    font-style: italic;
+    margin-top: 5px;
+    padding: 5px;
+    grid-column-start: col-start;
+    grid-column-end: col-end;
+    text-align: center;
+}
